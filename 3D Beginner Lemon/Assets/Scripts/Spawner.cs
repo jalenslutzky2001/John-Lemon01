@@ -32,6 +32,7 @@ public class Spawner : MonoBehaviour
                 spawnTimer = rate;
             }
         }
+
     }
 
     float GetModifier()

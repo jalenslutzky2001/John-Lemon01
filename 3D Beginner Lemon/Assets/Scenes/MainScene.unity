@@ -2861,6 +2861,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4333336559597445907, guid: 6b3f59ea29652544888db3e6a8fb753c,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 5086613527381286716, guid: 6b3f59ea29652544888db3e6a8fb753c,
         type: 3}
       propertyPath: m_RootOrder
@@ -2920,6 +2925,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: JohnLemon
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086613529087481638, guid: 6b3f59ea29652544888db3e6a8fb753c,
+        type: 3}
+      propertyPath: speed
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5086613529087481638, guid: 6b3f59ea29652544888db3e6a8fb753c,
         type: 3}

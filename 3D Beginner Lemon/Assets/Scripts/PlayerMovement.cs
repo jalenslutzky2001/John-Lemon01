@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float turnSpeed = 20f;
-    public float jumpForce = 7;
+    public float speed = 100;
+    public float jumpForce = 7000;
     
     Animator m_Animator;
     Rigidbody m_Rigidbody;
@@ -56,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             m_Rigidbody.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+            Debug.Log("?");
         }
 
     }

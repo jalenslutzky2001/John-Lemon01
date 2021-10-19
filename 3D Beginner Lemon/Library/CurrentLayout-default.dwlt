@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 342}
   m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
-  controlID: 100
+  controlID: 103
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 342}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
-  controlID: 39
+  controlID: 67
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 40
+  controlID: 43
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -451,7 +451,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 728
+  m_LastVerticalScrollValue: 282.00003
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -485,9 +485,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ac440000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: e6faffff
+      m_ExpandedIDs: 2a12ffff1efbffffe4410000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -548,9 +548,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.5, y: 0.68733, z: 4.934229}
+    m_Target: {x: -4.68, y: 0.7138002, z: 6}
     speed: 2
-    m_Value: {x: 1.5, y: 0.68733, z: 4.934229}
+    m_Value: {x: -4.68, y: 0.7138002, z: 6}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -599,11 +599,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.40091407, y: 0.45756954, z: -0.24277633, w: 0.755618}
     speed: 2
-    m_Value: {x: 0.40091407, y: 0.45756957, z: -0.24277635, w: 0.755618}
+    m_Value: {x: 0.4009139, y: 0.45756933, z: -0.24277622, w: 0.7556176}
   m_Size:
-    m_Target: 4.733347
+    m_Target: 5.050475
     speed: 2
-    m_Value: 5.033347
+    m_Value: 5.050475
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -677,8 +677,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -391.5
     m_HBaseRangeMax: 391.5
-    m_VBaseRangeMin: -168
-    m_VBaseRangeMax: 168
+    m_VBaseRangeMin: -157.5
+    m_VBaseRangeMax: 157.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -695,11 +695,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 0
+      y: 21
       width: 783
-      height: 336
+      height: 315
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 391.5, y: 168}
+    m_Translation: {x: 391.5, y: 157.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -707,9 +707,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -391.5
-      y: -168
+      y: -157.5
       width: 783
-      height: 336
+      height: 315
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 783, y: 336}
