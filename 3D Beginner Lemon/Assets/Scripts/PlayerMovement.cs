@@ -5,11 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float turnSpeed = 20f;
-    public bool IsGrounded { get; private set; }
-    public bool allowJump = false;
-    public float jumpSpeed = 4f;
-    public bool JumpInput { get; set; }
-
+    public float jumpForce = 7;
+    
     Animator m_Animator;
     Rigidbody m_Rigidbody;
     AudioSource m_AudioSource;
@@ -32,7 +29,6 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        bool jump = Input.GetKey(KeyCode.Space);
 
 
         m_Movement.Set(horizontal, 0f, vertical);
@@ -57,9 +53,9 @@ public class PlayerMovement : MonoBehaviour
         Vector3 desiredForward = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
         m_Rotation = Quaternion.LookRotation(desiredForward);
 
-        if (jump && allowJump && IsGrounded)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            m_Rigidbody.AddForce(transform.up * jumpSpeed, ForceMode.VelocityChange);
+            m_Rigidbody.AddForce(transform.up * jumpForce, ForceMode.Impulse);
         }
 
     }
@@ -69,5 +65,7 @@ public class PlayerMovement : MonoBehaviour
     {
         m_Rigidbody.MovePosition(m_Rigidbody.position + m_Movement * m_Animator.deltaPosition.magnitude);
         m_Rigidbody.MoveRotation(m_Rotation);
+
     }
+
 }
