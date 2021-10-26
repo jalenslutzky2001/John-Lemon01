@@ -5,8 +5,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float turnSpeed = 20f;
-    public float speed = 100;
+    public float movementSpeed = 100;
     public float jumpForce = 7000;
+    public bool isGrounded;
     
     Animator m_Animator;
     Rigidbody m_Rigidbody;
@@ -21,6 +22,11 @@ public class PlayerMovement : MonoBehaviour
         m_Rigidbody = GetComponent<Rigidbody>();
         m_AudioSource = GetComponent<AudioSource>();
 
+    }
+
+    void OnCollisionStay()
+    {
+        isGrounded = true;
     }
 
   
@@ -54,9 +60,10 @@ public class PlayerMovement : MonoBehaviour
         Vector3 desiredForward = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
         m_Rotation = Quaternion.LookRotation(desiredForward);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             m_Rigidbody.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+            isGrounded = false;
             Debug.Log("?");
         }
 
